@@ -25,11 +25,11 @@ if __name__ == "__main__":
         try:
             encryption_text(settings)
             logging.info("Encryption completed")
-        except BaseException:
+        except Exception:
             logging.info("Something is wrong with the encryption key")
     elif args.decryption:
         try:
             decryption_text(settings)
             logging.info("Decryption completed")
-        except BaseException:
+        except Exception:
             logging.info("Something is wrong with the decryption key")
